@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title An Doanh - Tax Agency
+        title Agency - Start Bootstrap Theme
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
@@ -16,8 +16,7 @@ html(lang='en')
         script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        //- link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
 
@@ -32,62 +31,123 @@ html(lang='en')
                 a.navbar-brand.js-scroll-trigger(href='#page-top')
                     img(src='assets/img/navbar-logo.svg', alt='')
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Danh Mục
+                    | Menu
                     i.fas.fa-bars.ml-1
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
-                            //- a.nav-link.js-scroll-trigger(href='#services') Dịch Vụ
+                            a.nav-link.js-scroll-trigger(href='#services') Services
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#portfolio') Dịch Vụ
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Portfolio
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') Giới Thiệu
+                            a.nav-link.js-scroll-trigger(href='#about') About
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#team') Thành Viên
+                            a.nav-link.js-scroll-trigger(href='#team') Team
                         li.nav-item
-                            a.btn.btn-primary.nav-link.js-scroll-trigger(href='#contact') Liên Hệ
+                            a.nav-link.js-scroll-trigger(href='#contact') Contact
         // Masthead
         header.masthead
             .container
-                .masthead-subheading Công Ty Đại Lý Thuế An Doanh
-                .masthead-heading.text-uppercase Dịch Vụ Kế Toán Trọn Gói
+                .masthead-subheading Welcome To Our Studio!
+                .masthead-heading.text-uppercase It's Nice To Meet You
                 a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More
 
         // Services
         section#services.page-section
             .container
+                .text-center
+                    h2.section-heading.text-uppercase Services
+                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 .row.text-center
-                    .col-md-3
-                        span.fa-stack.fa-2x
-                            i.fas.fa-square.fa-stack-2x.text-primary
-                            i.fas.fa-heart.fa-stack-1x.fa-inverse
-                        h4.my-3 Tận Tâm
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
+                        h4.my-3 E-Commerce
                         p.text-muted
-                            | Thực hiện công việc với sự tận tụy nghề nghiệp.
-                    .col-md-3
-                        span.fa-stack.fa-2x
-                            i.fas.fa-square.fa-stack-2x.text-primary
-                            i.fas.fa-chart-line.fa-stack-1x.fa-inverse
-                        h4.my-3 Chính Xác
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
+                        h4.my-3 Responsive Design
                         p.text-muted
-                            | Mọi nghiệp vụ được xử lý chính xác.
-                    .col-md-3
-                        span.fa-stack.fa-2x
-                            i.fas.fa-square.fa-stack-2x.text-primary
-                            i.fas.fa-tachometer-alt.fa-stack-1x.fa-inverse
-                        h4.my-3 Nhanh Chóng
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-lock.fa-stack-1x.fa-inverse
+                        h4.my-3 Web Security
                         p.text-muted
-                            | Thực hiện nhanh chóng các nghiệp vụ thuế - kế toán.
-                    .col-md-3
-                        span.fa-stack.fa-2x
-                            i.fas.fa-square.fa-stack-2x.text-primary
-                            i.fas.fa-shield-alt.fa-stack-1x.fa-inverse
-                        h4.my-3 Bảo Mật
-                        p.text-muted
-                            | Bảo mật mọi thông tin của quý khách hàng.
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
         // Portfolio Grid
-        include includes/portfolio.pug
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Portfolio
+                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Threads
+                                .portfolio-caption-subheading.text-muted Illustration
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/02-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Explore
+                                .portfolio-caption-subheading.text-muted Graphic Design
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/03-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Finish
+                                .portfolio-caption-subheading.text-muted Identity
+                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/04-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Lines
+                                .portfolio-caption-subheading.text-muted Branding
+                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/05-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Southwest
+                                .portfolio-caption-subheading.text-muted Website Design
+                    .col-lg-4.col-sm-6
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/06-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Window
+                                .portfolio-caption-subheading.text-muted Photography
 
         // About
         section#about.page-section
@@ -207,16 +267,11 @@ html(lang='en')
                         a(href='#!')
                             img.img-fluid.d-block.mx-auto(src='assets/img/logos/creative-market.jpg', alt='')
 
-        // Map
-        div#map
-            .container-fluid
-                iframe(width='100%', height='450', frameborder='0' , style='border:0;' , allowfullscreen='' , aria-hidden='false' , tabindex="0" , src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.9276879671601!2d106.68537952923249!3d10.756760999520942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0531cc4bb9%3A0x12b299fa3442a72!2zNTY5LTU3MS01NzMgxJAuIFRy4bqnbiBIxrBuZyDEkOG6oW8sIEPhuqd1IEtobywgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1600678247700!5m2!1sen!2s')
-
         // Contact
         section#contact.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Liên Hệ Với Chúng Tôi
+                    h2.section-heading.text-uppercase Contact Us
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 form#contactForm(name='sentMessage', novalidate='novalidate')
                     .row.align-items-stretch.mb-5
@@ -243,7 +298,7 @@ html(lang='en')
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-left
-                        | Bản quyền thuộc về © Công Ty Đại Lý Thuế An Doanh
+                        | Copyright © Your Website 2020
                     .col-lg-4.my-3.my-lg-0
                         a.btn.btn-dark.btn-social.mx-2(href='#!')
                             i.fab.fa-twitter
